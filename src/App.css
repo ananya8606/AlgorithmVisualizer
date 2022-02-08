@@ -1,0 +1,62 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css");
+
+/* body {
+    background-color: #fff !important;
+} */
+.button {
+  display:inline-block;
+  height:50px;
+  width:50px;
+  margin:3vw;
+  padding-bottom:15px;
+  padding-left:15px;
+  padding-right:15px;
+}
+.button1 {
+padding-left:380px;
+background-color:Maroon;
+margin-top:50px;
+}
+.button .icon_title {
+  display: none;
+}
+
+.button:hover .icon_title {
+  display: initial;
+}
+
+.button:hover .icon {
+  display: none;
+}
+.nav-link,
+.dropdown-item {
+    cursor: pointer;
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .button {
+    margin: 0.1vw;
+    height: 75px;
+    width: 75px;
+  }
+}
+.tabs {
+    display: none;
+}
+.shadowB {
+    box-shadow: 0 0.5px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.w-20 {
+    width:5px;
+}
+
+.w-20:hover {
+    transition: all 0.3s;
+    filter: sepia(0.7);
+    cursor: pointer;
+}
+
+.thumb-title{
+    margin-top:5px;
+}

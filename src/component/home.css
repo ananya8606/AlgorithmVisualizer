@@ -1,0 +1,14 @@
+.type{
+    width: 100%;
+    align-content: center;
+    background-color: #282c34;
+    text-align: center;
+    font-family: "Roboto Slab ExtraLight";
+}
+.row-margin-05 { margin-top: 1em; }
+.card-body:hover{
+   background-color:red;
+}
+.card-body{
+  align-items:center;
+}
