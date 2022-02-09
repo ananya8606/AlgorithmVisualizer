@@ -11,7 +11,7 @@ class TypeWriterC extends Component {
                 <span className="badge badge-secondary">
                 <Typewriter
                     options={{
-                        strings: ["PLAY WITH DSA", "FALL IN LOVE WITH DSA","LET'S PLAY WITH DATA STRUCTURES"],
+                        strings: ["PLAY WITH BST", "FALL IN LOVE WITH DSA","LET'S PLAY WITH BINARY SEARCH TREE"],
                         autoStart: true,
                         loop: true,
                     }}

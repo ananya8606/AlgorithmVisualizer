@@ -1,5 +1,6 @@
 import React from 'react';
 import "./home.css";
+import Tree from "../treecomponent/treecomponent";
 export default class Home extends React.Component<{}, {activeIndex: number}> {
   constructor(){
           super();
@@ -9,7 +10,7 @@ export default class Home extends React.Component<{}, {activeIndex: number}> {
 state = {activeIndex: 0};
   render() {
     return(
-      <div class="container">
+  <div class="container">
   <div class="row row-margin-05">
   <div class="col-12 col-sm-6 col-lg-4">
   <div class="card border-dark text-white bg-info">
@@ -20,8 +21,8 @@ state = {activeIndex: 0};
   <button onClick={() => {this.setState({ activeIndex: 0 })}}
   class={this.state.activeIndex === 0 ? "btn btn-success dropdown-toggle" : "btn btn-primary dropdown-toggle"} data-toggle="dropdown">Let's play</button>
   <div class="dropdown-menu">
-      <a class="dropdown-item" href="https://imgbb.com/">Action</a>
-      <a class="dropdown-item" href="https://imgbb.com/">Another action</a>
+      <a class="dropdown-item" href="/tree">BreadthFirstSearch</a>
+      <a class="dropdown-item" href="/tree">DepthFirstSearch</a>
     </div>
   </div>
   </div>
@@ -36,8 +37,11 @@ state = {activeIndex: 0};
   <button onClick={() => {this.setState({ activeIndex: 1 })}}
   class={this.state.activeIndex === 1 ? "btn btn-success dropdown-toggle" : "btn btn-primary dropdown-toggle"} data-toggle="dropdown">Let's play</button>
   <div class="dropdown-menu">
-      <a class="dropdown-item" href="https://imgbb.com/">Action</a>
-      <a class="dropdown-item" href="https://imgbb.com/">Another action</a>
+      <a class="dropdown-item" href="/tree">BreadthFirstSearch</a>
+      <a class="dropdown-item" href="/tree">DepthFirstSearch</a>
+      <a class="dropdown-item" href="/tree">InorderTraversal</a>
+      <a class="dropdown-item" href="/tree">PreorderTraversal</a>
+      <a class="dropdown-item" href="/tree">PostorderTraversal</a>
     </div>
   </div>
 </div>
