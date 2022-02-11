@@ -6,20 +6,16 @@ import TreeContext from './tree_context';
 
 function Tree3() {
   let treeContext = useContext(TreeContext);
-  const [subtrees, setSubtree] = useState(treeContext.subtrees);
   const [currNode, setCurrNode] = useState(0);
   const [removeKey, setRemoveKey] = useState(0);
   const [insertKey, setInsertKey] = useState(0);
   const [inputValue, setInputValue] = useState('');
-  const [value, setValue] = useState(0);
-  const [treeNode, setTreeNode] = useState(new TreeModel());
+  const [value] = useState(0);
+  const [treeNode] = useState(new TreeModel());
   const [updateTree, setUpdateTree] = useState(0); // integer state
   let nodeList = [];
-  let insertedKey = 0;
-
   const insertStuff = () => {
     treeNode.insert(parseInt(insertKey), parseInt(value));
-    insertedKey = parseInt(insertKey);
     setUpdateTree((value) => ++value); // update the state to force render
   };
 
