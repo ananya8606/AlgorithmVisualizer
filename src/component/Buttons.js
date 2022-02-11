@@ -6,12 +6,12 @@ registerIcons();
 
 const DATA = [
   {
-    href: "https://github.com/",
+    href: "https://github.com/ananya8606",
     icon: ["fab", "github"],
     label: "Github"
   },
   {
-    href: "https://www.linkedin.com/in//",
+    href: "https://www.linkedin.com/in/ananya-gupta-b5421b173/",
     icon: ["fab", "linkedin"],
     label: "LinkedIn"
   },
@@ -21,7 +21,7 @@ const DATA = [
     label: "Resume"
   },
   {
-    href: "mailto:",
+    href: "mailto:ananyaiiitr@gmail.com",
     icon: ["fas", "paper-plane"],
     label: "Email me"
   }

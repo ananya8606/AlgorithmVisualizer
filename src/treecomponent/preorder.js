@@ -4,7 +4,7 @@ import Node from './subtree/nodecomponent';
 import './treecomponent.css';
 import TreeContext from './tree_context';
 
-function Tree() {
+function Tree5() {
   let treeContext = useContext(TreeContext);
   const [subtrees, setSubtree] = useState(treeContext.subtrees);
   const [currNode, setCurrNode] = useState(0);
@@ -101,8 +101,6 @@ function Tree() {
 
   return (
      <div className="Component">
-    <div className="container">
-      <div className="header">
         <div className="main-actions">
           <button id="add" onClick={() => insertStuff()}>
             Insert
@@ -119,14 +117,8 @@ function Tree() {
           </button>
         </div>
         <div className="navbar">
-          <button onClick={() => traversal(0)}>In-Order traversal</button>
-          <button onClick={() => traversal(1)}>Pre-Order traversal</button>
-          <button onClick={() => traversal(2)}>Post-Order traversal</button>
-          <button onClick={() => traversal(3)}>Breadth-First traversal</button>
-          <button onClick={() => traversal(4)}>Depth-First traversal</button>
+        <button onClick={() => traversal(1)}>Pre-Order traversal</button>
         </div>
-      </div>
-
       <div className="tree">
         {constructTree(treeNode.root)}
         {treeNode.root === null && (
@@ -134,8 +126,7 @@ function Tree() {
         )}
       </div>
     </div>
-    </div>
   );
 }
 
-export default Tree;
+export default Tree5;
