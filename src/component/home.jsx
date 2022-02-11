@@ -1,11 +1,5 @@
 import React from 'react';
 import "./home.css";
-import Tree1 from "../treecomponent/bfs";
-import Tree2 from "../treecomponent/dfs";
-import Tree3 from "../treecomponent/inorder";
-import Tree5 from "../treecomponent/preorder";
-import Tree4 from "../treecomponent/postorder";
-
 export default class Home extends React.Component<{}, {activeIndex: number}> {
   constructor(){
           super();
