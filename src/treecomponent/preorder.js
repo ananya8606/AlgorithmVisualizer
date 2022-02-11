@@ -16,11 +16,13 @@ function Tree5() {
   let nodeList = [];
   const insertStuff = () => {
     treeNode.insert(parseInt(insertKey), parseInt(value));
+    setUpdateTree(updateTree);
     setUpdateTree((value) => ++value); // update the state to force render
   };
 
   const removeStuff = () => {
     treeNode.remove(parseInt(removeKey));
+    setUpdateTree(updateTree);
     setUpdateTree((value) => ++value); // update the state to force render
   };
 
@@ -62,6 +64,7 @@ function Tree5() {
     function task(node, i) {
       setTimeout(function () {
         treeContext.curr_node_idx = node.key;
+        setCurrNode(currNode);
         setCurrNode(node.key);
       }, 1000 * i);
     }
